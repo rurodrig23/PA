@@ -10,22 +10,14 @@ public class cercle {
     this.radi = radi;
 
    }
-   public float getpi(double pi){
+   public float getPi(double pi){
     return pi;
 
    }
-   public double getradi(double radi){
+   public double getRadi(double radi){
     return radi;
 
    }
-
-   public void setPi(double pi) {
-    this.pi = pi;
-    }
-
-    public void setRadi(double radi) {
-    this.radi = radi;
-    }
 
    public class Main {
     public static void main(String[] args) {
@@ -33,9 +25,12 @@ public class cercle {
         double radi = 10.0;
 
         cercle cercle = new cercle(pi, radi);
+    }
 
     }
 }
-}
+
+
+
 
 
