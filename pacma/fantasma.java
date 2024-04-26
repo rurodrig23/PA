@@ -4,6 +4,9 @@ public class pacman{
 
     private int newPosX;
     private int newPosY;
+    private int puntuacion;
+    private int vidas;
+
 
 
 
@@ -60,4 +63,7 @@ public class fantasma{
 }
 
 
+
+
+    public
 }
