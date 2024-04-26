@@ -79,10 +79,10 @@ public class pacma{
 class Main {
     public static final void main(String[] args) {
         pacma pacma = new pacma(0, 0);
-        pacma fantasma = new pacma(1, 1);
+        fantasma fantasma = new fantasma(1, 1);
 
         System.out.println(pacma.getnewPosX() + pacma.getnewPosY());
-        System.out.println(fantasma.getnewPosX() + fantasma.getnewPosY);
+        System.out.println(fantasma.getnewPosX() + fantasma.getnewPosY());
     }
 }
 
