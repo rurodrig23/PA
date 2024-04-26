@@ -69,7 +69,7 @@ public class pacma{
     
 }
 
-    public void detectColisionFantasma(fantasma){
+    public void detectColisionFantasma(Pinky p, Inky i, Blinky b, Clyde c, fantasma){
         return newPosX = fantasma.getnewPosX();
         return newPosY = fantasma.getnewPosY(); 
 }
@@ -91,8 +91,6 @@ public class fantasma{
 
     private int newPosX;
     private int newPosY;
-
-
 
     public fantasma(int newPosX, int newPosY){
 
