@@ -1,6 +1,6 @@
 package pacma;
 
-public class pacman{
+class pacman{
 
     private int newPosX;
     private int newPosY;
@@ -74,15 +74,11 @@ public class pacman{
     public void detectColisionFantasma(fantasma){
         return newPosX = fantasma.getnewPosX()
 
-        return newPosY = fantasma.getnewPosY()
-
-
-
-    
+        return newPosY = fantasma.getnewPosY()  
 }
 }
 
-public class fantasma{
+class fantasma{
 
     private int newPosX;
     private int newPosY;
