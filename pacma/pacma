@@ -7,9 +7,6 @@ public class pacman{
     private int puntuacion;
     private int vidas;
 
-
-
-
     public pacman(int newPosX, int newPosY){
 
         this.newPosX;
@@ -46,27 +43,20 @@ public class pacman{
         this.puntuacion = puntuacion;
     }
 
-
-
     public void move(int newPosX, int newPosY){
         this.newPosX = newPosX;
         this.newPosY = newPosY;
 
 
 }
-
     public void pickupBola(){
 
         puntuacion = 10;
 
     
 }
-
-
     public void pickupBolaEspecial(){
-
-
-    
+ 
 }
 
     public void pickupFruita(){
@@ -82,13 +72,15 @@ public class pacman{
 }
 
     public void detectColisionFantasma(fantasma){
-        return newPosX =
+        return newPosX = fantasma.getnewPosX()
+
+        return newPosY = fantasma.getnewPosY()
+
 
 
     
 }
 }
-
 
 public class fantasma{
 
