@@ -36,9 +36,21 @@ public class pacman{
         this.newPosY = newPosY;
     }
 
+    public int puntuacion(){
+        return puntuacion;
+
+
+    }
+
+    public void puntuacion(int puntuacion){
+        this.puntuacion = puntuacion;
+    }
+
+
 
     public void move(int newPosX, int newPosY){
-
+        this.newPosX = newPosX;
+        this.newPosY = newPosY;
 
 
 }
