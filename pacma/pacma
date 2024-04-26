@@ -12,9 +12,30 @@ public class pacman{
 
     public pacman(int newPosX, int newPosY){
 
-        this.newPosX = newPosX;
-        this.newPosX = newPosY;
+        this.newPosX;
+        this.newPosY;
+        this.puntuacion = 2;
+        this.vidas = 3;
 }
+
+    public int getnewPosX(){
+        return newPosX;
+    }
+
+    public void setnewPosX(int newPosX){
+        this.newPosX = newPosX;
+    }
+
+
+
+    public int getnewPosY(){
+        return newPosY;
+    }
+
+    public void setnewPosY(int newPosY){
+        this.newPosY = newPosY;
+    }
+
 
     public void move(int newPosX, int newPosY){
 
@@ -24,6 +45,7 @@ public class pacman{
 
     public void pickupBola(){
 
+        puntuacion = 10;
 
     
 }
@@ -35,9 +57,15 @@ public class pacman{
     
 }
 
-    public void loseLife(){
+    public void pickupFruita(){
 
+        puntuacion = 40;
+    
+}
 
+    public void loseLife(int vidas){
+
+        vidas--;
     
 }
 
@@ -65,5 +93,5 @@ public class fantasma{
 
 
 
-    public
+    public move
 }
