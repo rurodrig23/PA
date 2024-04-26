@@ -13,7 +13,7 @@ public pacman(int newPosX, int newPosY){
     this.newPosX = newPosY;
 }
 
-public void move(){
+public void move(int newPosX, int newPosY){
 
 
 
