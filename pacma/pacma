@@ -81,7 +81,8 @@ public class pacman{
     
 }
 
-    public void detectColisionFantasma(){
+    public void detectColisionFantasma(fantasma){
+        return newPosX =
 
 
     
@@ -102,8 +103,28 @@ public class fantasma{
         this.newPosX = newPosY;
 }
 
+    public int getnewPosX(){
+        return newPosX;
+}
+
+    public void setnewPosX(int newPosX){
+        this.newPosX = newPosX;
+}
 
 
 
-    public move
+    public int getnewPosY(){
+        return newPosY;
+}
+
+    public void setnewPosY(int newPosY){
+        this.newPosY = newPosY;
+}
+
+
+    public void move(int newPosX, int newPosY){
+        this.newPosX = newPosX;
+        this.newPosY = newPosY;
+
+}
 }
