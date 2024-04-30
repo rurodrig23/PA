@@ -2,13 +2,25 @@ package interficies;
 
 interface FiguraGeometrica {
 
-    abstract void calculArea()
-    abstract void calculPerimetre()
+    abstract double calculArea()
+    abstract double calculPerimetre()
     
 
-abstract class Figura2D(){
+public abstract class Figura2D implements FiguraGeometrica(){
 
-    private String nom;
+    double longitud , ancho;
+
+     cuadrilatero_rectangulo(double 1 , double a){
+
+        this.longitud = 1;
+        this.ancho = a;
+
+     }  
+
+     @Override
+     public double calculPerimetre(){
+        retun ((2*longitud)+(2*ancho));
+     }
 
 
 }
@@ -19,8 +31,10 @@ class Main {
     public static final void main (String[] args) {
         Cercle resultat_area = new Cercle();
         Cercle resultat_perimetre = new Cercle();
-        System.out.println(resultat_area.area());
-        System.out.println(resultat_perimetre.perimetre());
+        Rectangle resultat_area = new Rectangle();
+        Rectangle resultat_perimetre = new Rectangle();
+        System.out.println(resultat_area.calculArea());
+        System.out.println(resultat_perimetre.calculPerimetre());
     }
 }
 
