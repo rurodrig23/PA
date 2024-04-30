@@ -1,0 +1,27 @@
+package interficies;
+
+interface FiguraGeometrica {
+
+    abstract void calculArea()
+    abstract void calculPerimetre()
+    
+
+abstract class Figura2D(){
+
+    private String nom;
+
+
+}
+
+
+
+class Main {
+    public static final void main (String[] args) {
+        Cercle resultat_area = new Cercle();
+        Cercle resultat_perimetre = new Cercle();
+        System.out.println(resultat_area.area());
+        System.out.println(resultat_perimetre.perimetre());
+    }
+}
+
+}
