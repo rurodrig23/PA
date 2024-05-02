@@ -1,0 +1,25 @@
+package notes;
+
+public class GestorNotes{
+
+    private double[][] notesAlumnes;
+    private String[] nomAlumne;
+    private int count;
+
+    public GestorNotes()
+
+        notesAlumnes= new double[notes][];
+        nomAlumne = new String [notes];
+        count=0
+}
+  public void
+
+
+
+
+
+
+
+
+}
+}
