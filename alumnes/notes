@@ -8,12 +8,17 @@ public class GestorNotes{
 
     public GestorNotes()
 
-        notesAlumnes= new double[notes][];
-        nomAlumne = new String [notes];
+        notesAlumnes= new double[maxAlumnes][];
+        nomAlumne = new String [maxAlumnes];
         count=0
 }
-  public void
+  public void resgistarNotes ()
+        int i = 0
+        while (i < notesAlumnes.lenght && nomAlumne[i]){
 
+        i++;
+        
+        }
 
 
 
