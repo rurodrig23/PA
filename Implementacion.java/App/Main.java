@@ -20,7 +20,15 @@ public class Main {
         System.gc();
 
 
+    public static void recorridoDerecha(arbreBinari){
 
+
+    }
+    
+    public static void recorridoIzquierda(arbreBinari){
+
+        
+    }  
 
         
     }
