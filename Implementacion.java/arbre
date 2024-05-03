@@ -1,0 +1,8 @@
+package implementacion.java;
+
+class tree{
+
+    int valor;
+    tree left;
+    tree right;
+}
