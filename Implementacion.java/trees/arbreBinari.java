@@ -2,11 +2,13 @@ package trees;
 
 public class arbreBinari {
 
-    int count = 0;
+    private static int count = 0;
 
     public arbreBinari(){
             count++;
     }
     
-    
+    public static int getCount(){
+        return count;
+    }
 }
