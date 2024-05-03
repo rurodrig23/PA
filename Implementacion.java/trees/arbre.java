@@ -12,4 +12,14 @@ class tree{
         right = null;
 
     }
+
+public int getValor(){
+    return valor;
+
+}
+
+public void setValor(){
+    this.valor = valor;
+
+}
 }

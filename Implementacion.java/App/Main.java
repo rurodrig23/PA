@@ -1,7 +1,8 @@
 package App;
 import trees.arbreBinari;
+import trees.arbre;
 
-public class Main {
+public class App {
 
     public static void main(String[] args) {
 
