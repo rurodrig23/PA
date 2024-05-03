@@ -1,4 +1,4 @@
-package App;
+package Implementacion;
 import trees.arbreBinari;
 import trees.arbre;
 
@@ -6,15 +6,15 @@ public class App {
 
     public static void main(String[] args) {
 
-        arbreBinari intArbol1 = new arbreBinari();
-        arbreBinari intArbol2 = new arbreBinari();
+        arbreBinari intArbol1 = new arbreBinari(5);
+        arbreBinari intArbol2 = new arbreBinari(5);
 
 
 
         System.out.println("Contador de arboles: " + arbreBinari.count);
 
-        arbreBinari charArbol1 = new arbreBinari();
-        arbreBinari charArbol2 = new arbreBinari();
+        arbreBinari charArbol1 = new arbreBinari(3);
+        arbreBinari charArbol2 = new arbreBinari(3);
 
         System.out.println("Contador de arboles: " + arbreBinari.count);;
 
