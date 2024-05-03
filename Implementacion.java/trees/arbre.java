@@ -1,4 +1,4 @@
-package Implementacion.java;
+package trees;
 
 class tree{
 
@@ -12,3 +12,4 @@ class tree{
         right = null;
 
     }
+}
