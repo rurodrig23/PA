@@ -30,6 +30,12 @@ public class Main {
         
     }  
 
-        
+
+    System.out.println("Recorrido del arbol entero con la rama derecha: " );
+    recorridoDerecha;
+
+
+    System.out.println("Recorrido del arbol entero con la rama izquierda: " );
+    recorridoIzquierda;
     }
 }
