@@ -13,6 +13,7 @@ class tree{
 
     }
 
+    
 public int getValor(){
     return valor;
 

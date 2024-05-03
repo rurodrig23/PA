@@ -11,6 +11,7 @@ public class App {
 
 
 
+        
         System.out.println("Contador de arboles: " + arbreBinari.count);
 
         arbreBinari charArbol1 = new arbreBinari(3);
