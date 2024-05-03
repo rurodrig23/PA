@@ -7,6 +7,18 @@ public class Main {
 
         arbreBinari intArbol1 = new arbreBinari();
         arbreBinari intArbol2 = new arbreBinari();
+
+
+
+        System.out.println("Contador de arboles: " + arbreBinari.count);;
+
+
+
+
+
+
+
+
         
     }
 }
