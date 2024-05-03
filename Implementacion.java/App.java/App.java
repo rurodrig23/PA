@@ -1,6 +1,6 @@
-package Implementacion;
-import trees.arbreBinari;
-import trees.arbre;
+package App.java;
+import trees.arbreBinari.java;
+import trees.arbre.java;
 
 public class App {
 
