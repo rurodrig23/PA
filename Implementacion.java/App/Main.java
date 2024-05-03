@@ -17,7 +17,7 @@ public class Main {
 
         System.out.println("Contador de arboles: " + arbreBinari.count);;
 
-
+        System.gc();
 
 
 
