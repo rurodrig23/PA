@@ -6,6 +6,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Parse {
+
+    private static String getElementValue(Element element, String tagName) {
+        NodeList nodeList = element.getElementsByTagName(tagName).item(0).getChildNodes();
+        Node node = (Node) nodeList.item(0);
+        return node.getNodeValue();
+
+    }
     public static void main(String[] args) {
         try {
             File xmlFile = new File("elMeuFitxer.xml");
@@ -35,6 +42,8 @@ public class Parse {
             System.out.println(personaje);
             personaje.setPuntosDeVida(200);
         }
+    } catch (Exception e){
+        e.printStackTrace();
     }
 }
             
