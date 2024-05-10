@@ -29,6 +29,11 @@ public class Parse {
                 int puntosDeMana = Integer.parseInt(getElementValue(element, "puntsDeMana"));
                 String arma = getElementValue(element, "arma");
                 String armadura = getElementValue(element, "armadura");
+            
+                
+            Personaje personaje = new Personaje(nombre, nivel, puntosDeVida, puntosDeMana, arma, armadura);
+            System.out.println(personaje);
+            personaje.setPuntosDeVida(200);
 
             }       
 }
