@@ -17,6 +17,12 @@ public class Parse {
 
             List<Personaje> personajes = new ArrayList<>();
             NodeList nodeList = doc.getElementsByTagName("elMeuFitxer");
-    }
+        
+        
+            for (int i = 0; i < nodeList.getLength(); i++) {
+                Element element = (Element) nodeList.item(i);
+            }
+        
+}
 }
 }
