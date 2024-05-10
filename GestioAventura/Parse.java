@@ -34,12 +34,10 @@ public class Parse {
             Personaje personaje = new Personaje(nombre, nivel, puntosDeVida, puntosDeMana, arma, armadura);
             System.out.println(personaje);
             personaje.setPuntosDeVida(200);
-            catch (Exception e) {
-                e.printStackTrace();
-            }
+        }
+    }
+}
             
 
-            }       
-}
-}
+                
 }
