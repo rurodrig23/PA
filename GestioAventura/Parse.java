@@ -2,6 +2,8 @@ package GestioAventura;
 import javax.xml.parsers.*;
 import org.w3c.dom.*;
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Parse {
     public static void main(String[] args) {
@@ -11,5 +13,9 @@ public class Parse {
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             Document doc = dBuilder.parse(xmlFile);
 
+
+
+            List<Personaje> personajes = new ArrayList<>();
     }
+}
 }
