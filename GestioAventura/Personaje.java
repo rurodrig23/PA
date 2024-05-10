@@ -5,7 +5,7 @@ import java.io.*;
 
 public class Personaje<T> {
     private String nombre;
-    private int nivel;
+    private int nivell;
     private int puntosDeVida;
     private int puntosDeMana;
     private String arma;
@@ -16,7 +16,7 @@ public class Personaje<T> {
     public Personaje(String nombre, int nivel, int puntosDeVida, int puntosDeMana, String arma, String armadura){
 
     this.nombre = nombre;
-    this.nivel = nivel;
+    this.nivell = nivel;
     this.puntosDeVida = puntosDeVida;
     this.puntosDeMana = puntosDeMana;
     this.arma = arma;
@@ -35,11 +35,11 @@ public class Personaje<T> {
     }
 
     public int getNivel(){
-        return nivel;
+        return nivell;
 
     }
     public void setNivel(int nivel){
-        this.nivel = nivel;
+        this.nivell = nivel;
         }    
 
     public int getPuntosDeVida(){
