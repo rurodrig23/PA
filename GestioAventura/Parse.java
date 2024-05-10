@@ -21,8 +21,16 @@ public class Parse {
         
             for (int i = 0; i < nodeList.getLength(); i++) {
                 Element element = (Element) nodeList.item(i);
-            }
-        
+            
+
+            String nombre = getElementValue(element, "nom");
+                int nivel = Integer.parseInt(getElementValue(element, "nivell"));
+                int puntosDeVida = Integer.parseInt(getElementValue(element, "puntsDeVida"));
+                int puntosDeMana = Integer.parseInt(getElementValue(element, "puntsDeMana"));
+                String arma = getElementValue(element, "arma");
+                String armadura = getElementValue(element, "armadura");
+
+            }       
 }
 }
 }
