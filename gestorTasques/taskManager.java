@@ -93,6 +93,7 @@ class TaskManagement
 				} catch (IOException e) {
 					System.out.println("Error saving tasks to file: " + e.getMessage());
 				}
+			}
 		}
 	
-}
+	
