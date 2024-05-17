@@ -13,12 +13,16 @@ class Task
     private Date dueDate;
     private String status;
 
-	public Task(String title, String description, String dueDate,String status) throws ParseException {
+	public Task(String title, String description, java.sql.Date date,String status) throws ParseException {
 		this.title = title;
         this.description = description;
-        this.dueDate = new SimpleDateFormat("dd/MM/yyyy").parse(dueDate);
+        this.dueDate = new SimpleDateFormat("dd/MM/yyyy").parse(date);
         this.status = status;
 	}
+
+    public Task(String title2, String description2, java.sql.Date date, String status2) {
+        //TODO Auto-generated constructor stub
+    }
 
     public int getId() {
         return id;

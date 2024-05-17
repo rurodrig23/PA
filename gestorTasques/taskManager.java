@@ -7,7 +7,9 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.File;
 import java.io.IOException;
+import java.sql.Date;
 import java.text.ParseException;
+import java.text.SimpleDateFormat;
 
 class TaskManagement
 {
@@ -27,14 +29,15 @@ class TaskManagement
 	}
 
 	public void addTask(String title, String description, String dueDate, String status) throws ParseException {
-		Task task = new Task(title, description, dueDate, status);
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+		Date date = (Date) format.parse(dueDate);
+		Task task = new Task(title, description, date, status);
 		lists.get(status).add(task);
 		tasks.put(task.getId(), task);
 		saveTasksToFile();
 	}
-        
-    }
-
+	
+     
 	public void doneTask(int taskId) {
         Task task = tasks.get(taskId);
         task.setStatus("Completada");
@@ -91,5 +94,5 @@ class TaskManagement
 					System.out.println("Error saving tasks to file: " + e.getMessage());
 				}
 		}
-	}
 	
+}
