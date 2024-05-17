@@ -8,13 +8,13 @@ class Task
     private int id;
 	private String title;
     private String description;
-    private String datavenc;
+    private String dueDate;
     private String status;
 
-	public Task(String title, String description, String datavenc,String status) {
+	public Task(String title, String description, String dueDate,String status) {
 		this.title = title;
         this.description = description;
-        this.datavenc = datavenc;
+        this.dueDate = dueDate;
         this.status = status;
 	}
 
@@ -26,8 +26,8 @@ class Task
         return description;
     }
 
-    public String datavenc() {
-        return datavenc;
+    public String dueDate() {
+        return dueDate;
     }
 
     public String getStatus() {

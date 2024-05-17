@@ -10,7 +10,7 @@ class Main
 
         try {        
 		System.out.println("Add task");
-		manager.addTask("Aprobar Programacion", "Alta");
+		manager.addTask("Aprobar Programacion", "Aprobar Programacion", "2024-05-20", "Alta");
 		System.out.println("Hacemos Print de todo");
 		manager.printAllTask();
 		System.out.println("Hacemos Print de prioridad");
