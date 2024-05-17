@@ -1,4 +1,4 @@
-package gestorTasques.java;
+package gestorTasques;
 
 import java.text.ParseException;
 

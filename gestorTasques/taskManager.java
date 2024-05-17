@@ -1,4 +1,4 @@
-package gestorTasques.java;
+package gestorTasques;
 import java.util.HashMap;
 import java.util.ArrayList;
 import java.io.BufferedReader;
