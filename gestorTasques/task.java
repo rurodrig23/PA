@@ -20,10 +20,6 @@ class Task
         this.status = status;
 	}
 
-    public Task(String title2, String description2, java.sql.Date date, String status2) {
-        //TODO Auto-generated constructor stub
-    }
-
     public int getId() {
         return id;
     }
