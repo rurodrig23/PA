@@ -12,9 +12,9 @@ class TaskManagement
 	public TaskManagement(String nom_archivo) {
 		this.nom_archivo = nom_archivo;
 		lists = new HashMap<String, ArrayList<Task>>();
-		lists.put("Baja", new ArrayList<Task>());
-		lists.put("Media", new ArrayList<Task>());
-		lists.put("Alta", new ArrayList<Task>());
+		lists.put("Pendiente", new ArrayList<Task>());
+		lists.put("En curso", new ArrayList<Task>());
+		lists.put("Completada", new ArrayList<Task>());
 		tasks = new HashMap<Integer, Task>();
 	}
 
@@ -49,36 +49,43 @@ class TaskManagement
 
 class Task 
 {
-	private static int numInstances = 0;
-	private int id;
-	private String name;
-	private boolean isDone;
+	private String title;
+    private String description;
+    private String datavenc;
+    private String status;
 
-	public Task(String name) {
-		this.name = name;
-		this.isDone = false;
-		this.id = ++numInstances;
+	public Task(String title, String description, String datavenc,String status) {
+		this.title = title;
+        this.description = description;
+        this.datavenc = datavenc;
+        this.status = status;
 	}
 
-	public void done() {
-		this.isDone = true;
-	}
+	public String getTitle() {
+        return title;
+    }
 
-	public int getId() {
-		return this.id;
-	}
+    public String getDescription() {
+        return description;
+    }
 
-	public String getName() {
-		return this.name;
-	}
+    public String datavenc() {
+        return datavenc;
+    }
 
-	public boolean isDone() {
-		return this.isDone;
-	}
+    public String getStatus() {
+        return status;
+    }
 
-	public String toString() {
-		return "Id:" + id.toString() + " Name: " + name + "Is done:" + isDone.toString();
-	}
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    @Override
+    public String toString() {
+    
+        return title + "," + description + "," + status;
+    }
 }
 
 class Main
