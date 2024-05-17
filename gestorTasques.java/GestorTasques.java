@@ -19,7 +19,7 @@ class TaskManagement
 	}
 
 	public void addTask(String taskName, String priority) {
-		Task task = new Task(taskName);
+		Task task = new Task(String title, String description, String datavenc, String status);
 		lists.get(priority).add(task);
 		tasks.put(task.getId(), task);
 	}
@@ -45,47 +45,6 @@ class TaskManagement
 			System.out.println(task);
 		}
 	}
-}
-
-class Task 
-{
-	private String title;
-    private String description;
-    private String datavenc;
-    private String status;
-
-	public Task(String title, String description, String datavenc,String status) {
-		this.title = title;
-        this.description = description;
-        this.datavenc = datavenc;
-        this.status = status;
-	}
-
-	public String getTitle() {
-        return title;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public String datavenc() {
-        return datavenc;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    @Override
-    public String toString() {
-    
-        return title + "," + description + "," + status;
-    }
 }
 
 class Main
