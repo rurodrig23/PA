@@ -2,19 +2,21 @@ package gestorTasques;
 import java.io.*;
 import java.text.ParseException;
 import java.util.*;
+import java.util.Date;
+import java.text.SimpleDateFormat;
 
 class Task 
 {
     private int id;
 	private String title;
     private String description;
-    private String dueDate;
+    private Date dueDate;
     private String status;
 
-	public Task(String title, String description, String dueDate,String status) {
+	public Task(String title, String description, String dueDate,String status) throws ParseException {
 		this.title = title;
         this.description = description;
-        this.dueDate = dueDate;
+        this.dueDate = new SimpleDateFormat("dd/MM/yyyy").parse(dueDate);
         this.status = status;
 	}
 
@@ -31,8 +33,9 @@ class Task
     }
 
     public String dueDate() {
-        return dueDate;
+        return new SimpleDateFormat("dd/MM/yyyy").format(dueDate);
     }
+
 
     public String getStatus() {
         return status;
