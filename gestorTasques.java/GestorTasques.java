@@ -1,12 +1,16 @@
 import java.util.HashMap;
 import java.util.ArrayList;
+import java.io.File;
+import java.io.IOException;
 
 class TaskManagement
 {
 	HashMap<String, ArrayList<Task>> lists;
 	HashMap<Integer, Task> tasks;
+	String nom_archivo;
 
-	public TaskManagement() {
+	public TaskManagement(String nom_archivo) {
+		this.nom_archivo = nom_archivo;
 		lists = new HashMap<String, ArrayList<Task>>();
 		lists.put("Baja", new ArrayList<Task>());
 		lists.put("Media", new ArrayList<Task>());
