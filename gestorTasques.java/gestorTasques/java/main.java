@@ -1,9 +1,14 @@
 package gestorTasques.java;
 
+import java.text.ParseException;
+
 class Main
 {
 	public static void main(String[] args) {
-		TaskManagement manager = new TaskManagement();
+		TaskManagement manager = new TaskManagement("archivo.txt");
+
+
+        try {        
 		System.out.println("Add task");
 		manager.addTask("Aprobar Programacion", "Alta");
 		System.out.println("Hacemos Print de todo");
@@ -18,5 +23,8 @@ class Main
 		manager.deleteTask(1);
 		System.out.println("Hacemos Print de todo");
 		manager.printAllTask();
+        } catch (ParseException e) {
+        System.out.println("Error al procesar la fecha: " + e.getMessage());
+    }
+        }
 	}
-}
