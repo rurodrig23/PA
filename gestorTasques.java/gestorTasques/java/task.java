@@ -1,7 +1,11 @@
 package gestorTasques.java;
+import java.io.*;
+import java.text.ParseException;
+import java.util.*;
 
 class Task 
 {
+    private int id;
 	private String title;
     private String description;
     private String datavenc;
