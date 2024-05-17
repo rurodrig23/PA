@@ -27,10 +27,11 @@ class TaskManagement
 	}
 
 	public void addTask(String title, String description, String dueDate, String status) throws ParseException {
-        Task task = new Task(title, description, dueDate, status);
-        lists.get(status).add(task);
-        tasks.put(task.getId(), task);
+		Task task = new Task(title, description, dueDate, status);
+		lists.get(status).add(task);
+		tasks.put(task.getId(), task);
 		saveTasksToFile();
+	}
         
     }
 
@@ -72,7 +73,7 @@ class TaskManagement
 				reader.close();
 
 				}
-			} catch (IOException | ParseException e) {
+			} catch (IOException e) {
 				System.out.println("Error loading tasks from file: " + e.getMessage());
 			}
 			}
