@@ -18,6 +18,10 @@ class Task
         this.status = status;
 	}
 
+    public int getId() {
+        return id;
+    }
+
 	public String getTitle() {
         return title;
     }
