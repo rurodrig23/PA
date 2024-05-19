@@ -1,0 +1,74 @@
+import java.util.ArrayList;
+import java.util.List;
+
+class Libro {
+    private String titulo;
+
+    public Libro(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+}
+
+class ListaLibros<T extends Libro> {
+    private List<T> listaLibros;
+
+    public ListaLibros() {
+        listaLibros = new ArrayList<>();
+    }
+
+    public void agregarLibro(T libro) {
+        listaLibros.add(libro);
+    }
+
+    public void eliminarLibro(String titulo) {
+        T libro = buscarLibro(titulo);
+        if (libro != null) {
+            listaLibros.remove(libro);
+            System.out.println("Libro eliminado: " + titulo);
+        } else {
+            System.out.println("No se encontró el libro: " + titulo);
+        }
+    }
+
+    public T buscarLibro(String titulo) {
+        for (T libro : listaLibros) {
+            if (libro.getTitulo().equals(titulo)) {
+                return libro;
+            }
+        }
+        return null;
+    }
+
+    public void mostrarLibros() {
+        System.out.println("Lista de libros:");
+        for (T libro : listaLibros) {
+            System.out.println(libro.getTitulo());
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        ListaLibros<Libro> lista = new ListaLibros<>();
+
+        lista.agregarLibro(new Libro("pepa pig"));
+        lista.agregarLibro(new Libro("el oso fabuloso"));
+
+        lista.mostrarLibros();
+
+        Libro libro = lista.buscarLibro("pepa pig");
+        if (libro != null) {
+            System.out.println("Se encontró el libro: " + libro.getTitulo());
+        } else {
+            System.out.println("No se encontró el libro.");
+        }
+
+        lista.eliminarLibro("pepa pig");
+
+        lista.mostrarLibros();
+    }
+}
