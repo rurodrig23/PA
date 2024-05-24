@@ -35,7 +35,7 @@ public class robotControlGUI {
         frame.add(pantalla);
       
 
-        frame.setSize(200, 300);
+        frame.setSize(375, 300);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
     }
