@@ -53,6 +53,22 @@ public class robotControlGUI {
                 pantalla.setText("Se ha movido hacia atrás");            }
         });
 
+        esquerra.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                pantalla.setText("Se ha girado a la izquierda");
+            }
+        });
+
+        dreta.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                pantalla.setText("Se ha girado a la derecha");
+          
+            }
+        });
+
+
+
+
 
     }
 }
