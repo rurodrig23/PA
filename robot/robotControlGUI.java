@@ -20,6 +20,9 @@ public class robotControlGUI {
         JButton guardar = new JButton("Guardar Estat");
         JButton carregar = new JButton("Carregar Estat");
 
+        
+        buttonsPanel.setLayout(new BoxLayout(buttonsPanel, BoxLayout.Y_AXIS));
+
         buttonsPanel.add(endavant);
         buttonsPanel.add(enrere);
         buttonsPanel.add(esquerra);
@@ -27,24 +30,13 @@ public class robotControlGUI {
         buttonsPanel.add(guardar);
         buttonsPanel.add(carregar);
 
-        for (int i = 0; i < numericButtons.length; i++){
-            numericButtons[i] = new JButton(Integer.toString(i));
-
-        }
-        pantalla.setEditable(false);
-
-        for (JButton jButton : numericButtons) {
-            buttonsPanel.add(jButton);
-            
-        }
+        frame.setLayout(new GridLayout(2, 1));
         frame.add(buttonsPanel);
-        frame.setLayout(managerButtons);
         frame.add(pantalla);
+      
+
         frame.setSize(200, 300);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
     }
-
-    }
-
 }
