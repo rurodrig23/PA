@@ -11,7 +11,7 @@ public class robotControlGUI {
     private static JTextField pantalla;
 
      public static void main(String[] args) {
-        JFrame frame = new JFrame("ROBOT");
+        JFrame frame = new JFrame("Control de Robot");
         pantalla = new JTextField();
         JPanel buttonsPanel = new JPanel();
 
@@ -79,7 +79,7 @@ public class robotControlGUI {
                 // Lógica para cargar el estado del robot
             }
         });
-    }
+    
         
 
     guardar.addActionListener(new ActionListener() {
@@ -88,5 +88,8 @@ public class robotControlGUI {
           
         }
     });
-    }
+    
+}
+
+}
 
