@@ -66,9 +66,27 @@ public class robotControlGUI {
             }
         });
 
+        guardar.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                pantalla.setText("Se ha guardado el estado");
+              
+            }
+        });
 
-
-
-
+        carregar.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                pantalla.setText("Se ha cargado el estado");
+                // Lógica para cargar el estado del robot
+            }
+        });
     }
-}
+        
+
+    guardar.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e) {
+            pantalla.setText("Se ha guardado el estado");
+          
+        }
+    });
+    }
+
