@@ -30,6 +30,7 @@ public class robotControlGUI {
         buttonsPanel.add(guardar);
         buttonsPanel.add(carregar);
 
+        frame.setLayout(new GridLayout(3, 2));
         frame.add(buttonsPanel);
         frame.add(pantalla);
       
