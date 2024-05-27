@@ -1,36 +1,23 @@
-package introduccion;
-
-public class cercle {
+class Cercle {
+    private double radi = 12;
     private double pi = 3.14;
-    private double radi = 10;
 
-
-   public cercle(double pi , double radi) {
-    this.pi = pi;
-    this.radi = radi;
-
-   }
-   public float getPi(double pi){
-    return pi;
-
-   }
-   public double getRadi(double radi){
-    return radi;
-
-   }
-
-   public class Main {
-    public static void main(String[] args) {
-        double pi = 3.14;
-        double radi = 10.0;
-
-        cercle cercle = new cercle(pi, radi);
+    public double area(){
+        double area_calculada = this.pi * (this.radi * this.radi);
+        return area_calculada;
     }
 
+    public double perimetre(){
+        double perimetro_calculado = 2 * this.pi * this.radi;
+        return perimetro_calculado;
     }
 }
 
-
-
-
-
+class Main {
+    public static final void main (String[] args) {
+        Cercle resultat_area = new Cercle();
+        Cercle resultat_perimetre = new Cercle();
+        System.out.println(resultat_area.area());
+        System.out.println(resultat_perimetre.perimetre());
+    }
+}
