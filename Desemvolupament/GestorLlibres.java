@@ -18,7 +18,14 @@ public class GestorLlibres {
         }
     }
 
-
+    public void tornar(int id, String usuario) {
+        Llibre llibre = this.llibreria.get(id);
+        if (llibre != null && !llibre.disponible() && llibre.getUsuari().equals(usuario)) {
+            llibre.tornar();
+        } else {
+            System.out.println("No es pot tornar el llibre.");
+        }
+    }
 
 
 
