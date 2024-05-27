@@ -8,4 +8,8 @@ public class empleats {
         this.nom = nom;
         this.salari = salari;
     }
+
+    public void imprimirDetalls() {
+        System.out.println("Nom: " + nom + ", Salari: " + salari);
+    }
 }
