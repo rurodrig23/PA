@@ -12,4 +12,21 @@ public class empleats {
     public void imprimirDetalls() {
         System.out.println("Nom: " + nom + ", Salari: " + salari);
     }
+
+
+    public class EmpleatPerHores extends empleats {
+        private int horesTreballades;
+        private double tarifaPerHora;
+
+    public EmpleatPerHores(String nom, double tarifaPerHora, int horesTreballades) {
+        this.nom = nom;
+        this.tarifaPerHora = tarifaPerHora;
+        this.horesTreballades = horesTreballades;
+        this.calcularSalari();
+    }
+
+    public void calcularSalari() {
+        this.salari = this.tarifaPerHora * this.horesTreballades;
+    }
+}
 }
