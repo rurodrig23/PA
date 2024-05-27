@@ -27,9 +27,10 @@ public class GestorLlibres {
         }
     }
 
-
-
-
+    public void afegir(int id, Llibre llibre) {
+        this.llibreria.put(id, llibre);
+    }
+}
 
 class Llibre {
     private String titol;
@@ -60,6 +61,5 @@ public boolean disponible() {
 
 public String getUsuari() {
     return this.usuario;
-}
 }
 }
