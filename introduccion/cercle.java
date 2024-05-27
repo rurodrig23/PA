@@ -15,9 +15,8 @@ class Cercle {
 
 class Main {
     public static final void main (String[] args) {
-        Cercle resultat_area = new Cercle();
-        Cercle resultat_perimetre = new Cercle();
-        System.out.println(resultat_area.area());
-        System.out.println(resultat_perimetre.perimetre());
+        Cercle c = new Cercle();
+        System.out.println(c.area());
+        System.out.println(c.perimetre());
     }
 }
