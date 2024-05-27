@@ -9,6 +9,21 @@ public class GestorLlibres {
         this.llibreria = new HashMap<>();
     }
 
+    public void prestar(int id, String usuario) {
+        Llibre llibre = this.llibreria.get(id);
+        if (llibre != null && llibre.disponible()) {
+            llibre.prestar(usuario);
+        } else {
+            System.out.println("El llibre no està disponible.");
+        }
+    }
+
+
+
+
+
+
+
 class Llibre {
     private String titol;
     private String autor;
