@@ -1,3 +1,4 @@
+package introduccion;
 class Estudiant{
     private String nom;
     private int edad;
@@ -37,7 +38,7 @@ class Estudiant{
     }
 }
 
-/*class Main {
+class Main {
     public static final void main(String[] args) {
         Estudiant poner_nombre = new Estudiant();
         Estudiant poner_edad = new Estudiant();
