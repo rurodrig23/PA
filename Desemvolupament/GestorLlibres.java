@@ -31,7 +31,6 @@ public class GestorLlibres {
         this.llibreria.put(id, llibre);
     }
 }
-
 class Llibre {
     private String titol;
     private String autor;
