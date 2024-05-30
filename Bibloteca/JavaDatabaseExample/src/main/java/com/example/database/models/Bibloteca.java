@@ -1,4 +1,4 @@
-package Bibloteca.JavaDatabaseExample.src.main.java.com.example.database.models;
+package com.example.database.models;
 import java.util.HashMap;
 import java.util.Map;
 

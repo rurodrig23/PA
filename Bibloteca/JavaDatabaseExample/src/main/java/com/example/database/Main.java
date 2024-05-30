@@ -1,4 +1,5 @@
 package com.example.database;
+import Students.JavaDatabaseExample.src.main.java.DatabaseManager;
 
 public class Main {
     public static void main(String[] args) {
@@ -7,22 +8,22 @@ public class Main {
 
 
         // Crear un nou estudiant
-        Student student = new Student(1, "Joan", "Garcia");
+        Llibre student = new Llibre(1, "pepito", "Garcia");
         dbManager.addStudent(student);
 
 
         // Recuperar estudiant
-        LlistaLlibres retrievedStudent = dbManager.getStudent(1);
+        LlistaLlibres retrievedStudent = dbManager.getLlibre(1);
         System.out.println(retrievedStudent);
 
 
         // Actualitzar estudiant
-        student.setLastName("Martínez");
+        Llibre.setLastName("Martínez");
         dbManager.updateStudent(student);
 
 
         // Eliminar estudiant
-        dbManager.deleteStudent(1);
+        dbManager.deleteLLibre(1);
 
 
         dbManager.disconnect();
